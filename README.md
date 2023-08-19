@@ -1,2 +1,2 @@
-# Lou-reHomes
+# LouéreHomes
 Where you can Explore World
