@@ -1,0 +1,365 @@
+<html>
+    <head>
+		<link rel="apple-touch-icon" sizes="180x180" href="https://i.ibb.co/Vw3HPKq/apple-touch-icon.png" alt="">
+		<link rel="icon" type="image/png" sizes="32x32" href="https://i.ibb.co/DYjk20f/favicon-32x32.png" alt="">
+		<link rel="icon" type="image/png" sizes="16x16" href="https://i.ibb.co/zsd0NfY/favicon-16x16.png" alt="">
+        <title>Login</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+	
+    <body class="container">
+		
+
+        <div class="page-header">
+            <br><br><br>
+			
+        </div>
+		<header id="header" style="padding-top: 25px; color: black;" class="fixed-top d-flex align-items-center header-transparent">
+			<div class="container d-flex justify-content-between align-items-center">
+			  
+			 
+		
+			  <div id="logo">
+				<a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+				<!-- Uncomment below if you prefer to use a text logo -->
+				<h1>Louére Homes</h1>
+				
+			  </div>
+			</div>
+		  </header>
+
+
+
+		
+
+
+
+<div class="cont">
+  <div class="form sign-in" action="/login" method="post">
+    <h2>Welcome back,</h2>
+    <form action="/login" method="post">
+    <label>
+      <span>Username</span>
+      <input type="text" required type="text" name="username"/>
+    </label>
+    <label>
+      <span>Password</span>
+      <input type="password" required type="password" name="password"/>
+    </label>
+ <br>
+ <div style="text-align:center">
+        <a href="/email-send" class="forgot-pass">Forgot password?</a>
+ </div>
+
+    <button type="submit" class="submit" value="Log In">Sign In</button>
+</form>
+    <button type="button" class="fb-btn">Connect with <span>facebook</span></button>
+
+  </div>
+
+  <div class="sub-cont">
+    <div class="img">
+      <div class="img__text m--up">
+        <h2>New here?</h2>
+        <p>Sign up and discover great amount of new opportunities!</p>
+      </div>
+      <div class="img__text m--in">
+        <h2>One of us?</h2>
+        <p>If you already has an account, just sign in. We've missed you!</p>
+      </div>
+      <div class="img__btn">
+        <span class="m--up">Sign Up</span>
+        <span class="m--in">Sign In</span>
+      </div>
+    </div>
+    <form action="/signup" method="post">
+    <div class="form sign-up">
+      <h2>Time to feel like home,</h2>
+      <label>
+        <span>Name</span>
+        <input required type="text" name="username" type="text" />
+      </label>
+      <label>
+        <span>Email</span>
+        <input required type="email" name="email" type="email" />
+      </label>
+      <label>
+        <span>Password</span>
+        <input type="password" required type="password" name="password" />
+      </label>
+      <button type="submit" class="submit" value="Sign Up">Sign Up</button>
+    </form>
+      <button type="button" class="fb-btn">Join with <span>facebook</span></button>
+    </div>
+  </div>
+</div>
+
+<style>
+  *, *:before, *:after {
+	 box-sizing: border-box;
+	 margin: 0;
+	 padding: 0;
+}
+
+ body {
+	 font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	 background-image: url(https://images.pexels.com/photos/3976988/pexels-photo-3976988.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+	 
+	 backdrop-filter: blur(5px);
+    
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+#header #logo h1 {
+  font-size: 32px;
+  margin: 0;
+  line-height: 1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: black;
+}
+
+#hero h1 {
+  margin: 30px 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: black;
+}
+
+ input, button {
+	 border: none;
+	 outline: none;
+	 background: none;
+	 font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+ .tip {
+	 font-size: 20px;
+	 margin: 40px auto 50px;
+	 text-align: center;
+}
+ .cont {
+	 overflow: hidden;
+	 position: relative;
+	 width: 900px;
+	 height: 550px;
+	 margin: 0 auto 100px;
+	 background: #fff;
+}
+ .form {
+	 position: relative;
+	 width: 640px;
+	 height: 100%;
+	 transition: transform 1.2s ease-in-out;
+	 padding: 50px 30px 0;
+}
+ .sub-cont {
+	 overflow: hidden;
+	 position: absolute;
+	 left: 640px;
+	 top: 0;
+	 width: 900px;
+	 height: 100%;
+	 padding-left: 260px;
+	 background: #fff;
+	 transition: transform 1.2s ease-in-out;
+}
+ .cont.s--signup .sub-cont {
+	 transform: translate3d(-640px, 0, 0);
+}
+ button {
+	 display: block;
+	 margin: 0 auto;
+	 width: 260px;
+	 height: 36px;
+	 border-radius: 30px;
+	 color: #fff;
+	 font-size: 15px;
+	 cursor: pointer;
+}
+ .img {
+	 overflow: hidden;
+	 z-index: 2;
+	 position: absolute;
+	 left: 0;
+	 top: 0;
+	 width: 260px;
+	 height: 100%;
+	 padding-top: 360px;
+}
+ .img:before {
+	 content: '';
+	 position: absolute;
+	 right: 0;
+	 top: 0;
+	 width: 900px;
+	 height: 100%;
+	 background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/sections-3.jpg');
+	 background-size: cover;
+	 transition: transform 1.2s ease-in-out;
+}
+ .img:after {
+	 content: '';
+	 position: absolute;
+	 left: 0;
+	 top: 0;
+	 width: 100%;
+	 height: 100%;
+	 background: rgba(0, 0, 0, 0.6);
+}
+ .cont.s--signup .img:before {
+	 transform: translate3d(640px, 0, 0);
+}
+ .img__text {
+	 z-index: 2;
+	 position: absolute;
+	 left: 0;
+	 top: 50px;
+	 width: 100%;
+	 padding: 0 20px;
+	 text-align: center;
+	 color: #fff;
+	 transition: transform 1.2s ease-in-out;
+}
+ .img__text h2 {
+	 margin-bottom: 10px;
+	 font-weight: normal;
+}
+ .img__text p {
+	 font-size: 14px;
+	 line-height: 1.5;
+}
+ .cont.s--signup .img__text.m--up {
+	 transform: translateX(520px);
+}
+ .img__text.m--in {
+	 transform: translateX(-520px);
+}
+ .cont.s--signup .img__text.m--in {
+	 transform: translateX(0);
+}
+ .img__btn {
+	 overflow: hidden;
+	 z-index: 2;
+	 position: relative;
+	 width: 100px;
+	 height: 36px;
+	 margin: 0 auto;
+	 background: transparent;
+	 color: #fff;
+	 text-transform: uppercase;
+	 font-size: 15px;
+	 cursor: pointer;
+}
+ .img__btn:after {
+	 content: '';
+	 z-index: 2;
+	 position: absolute;
+	 left: 0;
+	 top: 0;
+	 width: 100%;
+	 height: 100%;
+	 border: 2px solid #fff;
+	 border-radius: 30px;
+}
+ .img__btn span {
+	 position: absolute;
+	 left: 0;
+	 top: 0;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 width: 100%;
+	 height: 100%;
+	 transition: transform 1.2s;
+}
+ .img__btn span.m--in {
+	 transform: translateY(-72px);
+}
+ .cont.s--signup .img__btn span.m--in {
+	 transform: translateY(0);
+}
+ .cont.s--signup .img__btn span.m--up {
+	 transform: translateY(72px);
+}
+ h2 {
+	 width: 100%;
+	 font-size: 26px;
+	 text-align: center;
+}
+ label {
+	 display: block;
+	 width: 260px;
+	 margin: 25px auto 0;
+	 text-align: center;
+}
+ label span {
+	 font-size: 12px;
+	 color: #cfcfcf;
+	 text-transform: uppercase;
+}
+ input {
+	 display: block;
+	 width: 100%;
+	 margin-top: 5px;
+	 padding-bottom: 5px;
+	 font-size: 16px;
+	 border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+	 text-align: center;
+}
+ .forgot-pass {
+     
+	 margin-top: 15px;
+	 text-align: center;
+	 font-size: 12px;
+	 color: #cfcfcf;
+}
+ .submit {
+	 margin-top: 40px;
+	 margin-bottom: 20px;
+	 background: #d4af7a;
+	 text-transform: uppercase;
+}
+ .fb-btn {
+	 border: 2px solid #d3dae9;
+	 color: #8fa1c7;
+}
+ .fb-btn span {
+	 font-weight: bold;
+	 color: #455a81;
+}
+ .sign-in {
+	 transition-timing-function: ease-out;
+}
+ .cont.s--signup .sign-in {
+	 transition-timing-function: ease-in-out;
+	 transition-duration: 1.2s;
+	 transform: translate3d(640px, 0, 0);
+}
+ .sign-up {
+	 transform: translate3d(-900px, 0, 0);
+}
+ .cont.s--signup .sign-up {
+	 transform: translate3d(0, 0, 0);
+}
+ 
+
+  </style>
+ 
+ <script>
+    document.querySelector('.img__btn').addEventListener('click', function() {
+  document.querySelector('.cont').classList.toggle('s--signup');
+});
+    </script>
